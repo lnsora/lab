@@ -1,0 +1,49 @@
+Задание 1.
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    int S, P;
+    
+    printf ("Введите значения сторон a, b\n");
+    scanf ("%d", &a);
+    scanf ("%d", &b);
+    S = a * b;
+    P = 2 * (a + b);
+    printf("Площадь = %d\n", S);
+    printf("Периметр = %d\n", P);
+    return 0;
+}
+
+Задание 2.
+#include <stdio.h>
+
+int main()
+{
+    int d;
+    double pi, L;
+    
+    printf ("Введите диаметр окружности\n");
+    scanf ("%d", &d);
+    pi = 3.14;
+    L = pi * d;
+    printf("Длина окружности = %g\n", L);
+    return 0;
+}
+
+Задание 3.
+#include <stdio.h>
+
+int main()
+{
+    int a, b;
+    double sr_a;
+    
+    printf ("Введите значения a, b\n");
+    scanf ("%d", &a);
+    scanf ("%d", &b);
+    sr_a = (a + b) / 2.0;
+    printf("Cреднее арифметическое = %g\n", sr_a);
+    return 0;
+}

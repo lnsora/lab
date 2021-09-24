@@ -79,3 +79,36 @@ int main()
     }
     return 0;
 }
+
+Задание 5.
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+    int a, b;
+    int s, r, p;
+    double ch;
+    printf ("Введите два ненулевых числа.\n");
+    scanf ("%d", &a);
+    scanf ("%d", &b);
+    if (a == 0 || b == 0)
+    {
+        printf ("Числа должны быть ненулевыми.\n");
+    }
+    else 
+    {
+        a = abs(a);
+        b = abs(b);
+        s = a + b;
+        r = a - b;
+        p = a * b;
+        ch = (double) a / (double) b;
+        printf ("Сумма = %d\n", s);
+        printf("Разность = %d\n", r);
+        printf("Произведение = %d\n", p);
+        printf("Частное = %g\n", ch);
+    }
+    return 0;
+}

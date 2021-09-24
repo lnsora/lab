@@ -47,3 +47,35 @@ int main()
     printf("Cреднее арифметическое = %g\n", sr_a);
     return 0;
 }
+
+Задание 4.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int a, b;
+    int s, r, p;
+    double ch;
+    printf ("Введите два ненулевых числа.\n");
+    scanf ("%d", &a);
+    scanf ("%d", &b);
+    if (a == 0 || b == 0)
+    {
+        printf ("Числа должны быть ненулевыми.\n");
+    }
+    else 
+    {
+        a = pow(a, 2);
+        b = pow(b, 2);
+        s = a + b;
+        r = a - b;
+        p = a * b;
+        ch = (double) a / (double) b;
+        printf ("Сумма квадратов = %d\n", s);
+        printf("Разность квадратов = %d\n", r);
+        printf("Произведение квадратов = %d\n", p);
+        printf("Частное квадратов = %g\n", ch);
+    }
+    return 0;
+}

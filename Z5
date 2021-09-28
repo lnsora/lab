@@ -1,0 +1,19 @@
+Задание 1.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int x1, y1, x2, y2, ab;
+    double AB;
+    
+    printf ("Введите координаты первой точки\n");
+    scanf ("%d%d", &x1, &y1);
+    printf ("Введите координаты второй точки\n");
+    scanf ("%d%d", &x2, &y2);
+    ab = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
+    AB = sqrt ((double) ab);
+    printf("Расстояние между точками = %g\n", AB);
+    return 0;
+}
+

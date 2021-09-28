@@ -27,7 +27,7 @@ int main()
     printf ("Введите диаметр окружности\n");
     scanf ("%d", &d);
     pi = 3.14;
-    L = pi * d;
+    L = 2.0 * pi * d;
     printf("Длина окружности = %g\n", L);
     return 0;
 }

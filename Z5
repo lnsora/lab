@@ -38,3 +38,29 @@ int main()
     
     return 0;
 }
+
+Задание 3.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int A, B, C, AC, BC, p;
+    
+    printf ("Введите значения A, B, C\n");
+    scanf ("%d%d%d", &A, &B, &C);
+    if (A < C && C < B)
+    {
+    AC = C - A;
+    AC = abs (AC);
+    BC = C - B;
+    BC = abs (BC);
+    p = AC * BC;
+    printf ("Произведение длин отрезков = %d\n", p);
+    }
+    else 
+    {
+      printf ("Условие С между А и В\n");  
+    }
+    return 0;
+}

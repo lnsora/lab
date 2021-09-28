@@ -17,3 +17,24 @@ int main()
     return 0;
 }
 
+Задание 2.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int A, B, C, AC, BC, sum;
+    
+    printf ("Введите значения A, B, C\n");
+    scanf ("%d%d%d", &A, &B, &C);
+    AC = C - A;
+    AC = abs (AC);
+    BC = C - B;
+    BC = abs (BC);
+    sum = AC - BC;
+    printf ("AC = %d\n", AC);
+    printf ("BC = %d\n", BC);
+    printf ("Сумма = %d\n", sum);
+    
+    return 0;
+}

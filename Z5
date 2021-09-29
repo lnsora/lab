@@ -64,3 +64,33 @@ int main()
     }
     return 0;
 }
+
+Задание 4.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int x1, y1, x2, y2, AB, BC, P, S;
+    
+    printf ("Введите координаты первой точки\n");
+    scanf ("%d%d", &x1, &y1);
+    printf ("Введите координаты второй точки\n");
+    scanf ("%d%d", &x2, &y2);
+    if (x1 == x2 || y1 == y2)
+    {
+        printf ("Стороны не являются противоположными.\n");
+    }
+    else
+    {
+    AB = y2 - y1;
+    AB = abs (AB);
+    BC = x2 - x1;
+    BC = abs (BC);
+    P = 2 * (AB + BC);
+    S = AB * BC;
+    printf("Площадь = %d\n", S);
+    printf("Периметр = %d\n", P);
+    }
+    return 0;
+}

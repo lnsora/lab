@@ -1,0 +1,23 @@
+Задание 1.
+#include <stdio.h>
+
+int
+main ()
+{
+  int a;
+  double A;
+
+  printf ("Введите градусное значение угла\n");
+  scanf ("%d", &a);
+  if (0 < a && a < 360)
+  {
+    A = (double) a / 180;  
+    printf ("Угол в радианах = %g π\n", A);
+  }
+  else 
+  {
+    printf ("Условие не соблюдается");
+  }
+  
+  return 0;
+}

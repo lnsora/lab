@@ -1,0 +1,70 @@
+Задание 1.
+#include <stdio.h>
+
+int main()
+{
+    int A, B, a, b;
+    
+    printf ("Введите A\n");
+    scanf ("%d", &A);
+    printf ("Введите B\n");
+    scanf ("%d", &B);
+    a = A;
+    b = B;
+    A = b;
+    B = a;
+    printf("A = %d\n", A);
+    printf("B = %d\n", B);
+    return 0;
+}
+
+Задание 2.
+#include <stdio.h>
+
+int main()
+{
+    int A, B, C, a, b, c;
+    
+    printf ("Введите A\n");
+    scanf ("%d", &A);
+    printf ("Введите B\n");
+    scanf ("%d", &B);
+    printf ("Введите C\n");
+    scanf ("%d", &C);
+    a = A;
+    b = B;
+    c = C;
+    A = c;
+    B = a;
+    C = b;
+    printf("A = %d\n", A);
+    printf("B = %d\n", B);
+    printf("C = %d\n", C);
+    return 0;
+}
+
+Задание 3.
+#include <stdio.h>
+
+int main()
+{
+    int A, B, C, a, b, c;
+    
+    printf ("Введите A\n");
+    scanf ("%d", &A);
+    printf ("Введите B\n");
+    scanf ("%d", &B);
+    printf ("Введите C\n");
+    scanf ("%d", &C);
+    a = A;
+    b = B;
+    c = C;
+    A = b;
+    B = c;
+    C = a;
+    printf("A = %d\n", A);
+    printf("B = %d\n", B);
+    printf("C = %d\n", C);
+    return 0;
+}
+

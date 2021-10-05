@@ -82,6 +82,61 @@ main ()
   x1 = pow(x, 6);
   x = pow(x, 2);
   y = 3 * x1 - 6 * x - 7; 
-  printf ("y = 3x^6 − 6x^2 − 7  = %d\n", y);
+  printf ("y = 3x^6 − 6x^2 − 7 = %d\n", y);
+  return 0;
+}
+
+Задание 5.
+#include <stdio.h>
+#include <math.h>
+
+int
+main ()
+{
+  int x, x1, y;
+
+  printf ("Введите x\n");
+  scanf ("%d", &x);
+  x = x - 3; 
+  x1 = pow(x, 6);
+  x = pow(x, 3);
+  y = 4 * x1 - 7 * x + 2; 
+  printf ("y = 4(x−3)^6 − 7(x−3)^3 + 2 = %d\n", y);
+  return 0;
+}
+
+Задание 6.
+#include <stdio.h>
+#include <math.h>
+
+int
+main ()
+{
+  int x, A;
+
+  printf ("Введите A\n");
+  scanf ("%d", &A);
+  A = pow(A, 2);
+  x = pow(A, 2);
+  A = A * A * x;
+  printf ("A^8 = %d\n", A);
+  return 0;
+}
+
+Задание 7.
+#include <stdio.h>
+#include <math.h>
+
+int
+main ()
+{
+  int x, x1, A;
+
+  printf ("Введите A\n");
+  scanf ("%d", &A);
+  x1 = pow(A, 2);
+  x = pow(x1, 2);
+  A = A * x * x * x1 * x1 * x1;
+  printf ("A^15 = %d\n", A);
   return 0;
 }

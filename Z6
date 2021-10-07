@@ -116,9 +116,8 @@ main ()
 
   printf ("Введите A\n");
   scanf ("%d", &A);
-  A = pow(A, 2);
   x = pow(A, 2);
-  A = A * A * x;
+  A = x * x * x * x;
   printf ("A^8 = %d\n", A);
   return 0;
 }

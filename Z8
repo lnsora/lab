@@ -1,0 +1,116 @@
+Задание 1.
+#include <stdio.h>
+
+int
+main ()
+{
+  int b;
+  double KB;
+  
+  printf ("Сколько байт?\n");
+  scanf ("%d", &b);
+  KB = (double) b / 1024.0; 
+  printf ("%g килобайт\n", KB);
+  
+  return 0;
+}
+
+Задание 2.
+#include <stdio.h>
+
+int
+main ()
+{
+  int A, B, c;
+  
+  printf ("A: \n");
+  scanf ("%d", &A);
+  printf ("B: \n");
+  scanf ("%d", &B);
+  if (A > B)
+  {
+      c = A / B; 
+      printf ("Количество отрезков длины B (без наложений) = %d\n", c);
+  }
+  else 
+  {
+      printf ("Не удовлетворяет условие\n");
+  }
+  
+  return 0;
+}
+
+Задание 3.
+#include <stdio.h>
+
+int
+main ()
+{
+  int A, B, c;
+  
+  printf ("A: \n");
+  scanf ("%d", &A);
+  printf ("B: \n");
+  scanf ("%d", &B);
+  if (A > B)
+  {
+      c = A % B; 
+      printf ("Длину незанятой части отрезка A = %d\n", c);
+  }
+  else 
+  {
+      printf ("Не удовлетворяет условие\n");
+  }
+  
+  return 0;
+}
+
+Задание 4.
+#include <stdio.h>
+
+int
+main ()
+{
+  int A, c, d;
+  
+  printf ("A: \n");
+  scanf ("%d", &A);
+  if (A < 100 || A > -100)
+  {
+      c = A % 10; 
+      d = A / 10;
+      A = c * 10 + d;
+      printf ("A: %d\n", A);
+  }
+  else
+  {
+      printf ("Не удовлетворяет условие\n");
+  }
+  
+  return 0;
+}
+
+Задание 5.
+#include <stdio.h>
+
+int
+main ()
+{
+  int A, c, d;
+  
+  printf ("A: \n");
+  scanf ("%d", &A);
+  if (A < 999 || A > -999)
+  {
+      c = A / 100; 
+      A = A - c * 100;
+      A = A * 10 + c;
+      printf ("A: %d\n", A);
+  }
+  else
+  {
+      printf ("Не удовлетворяет условие\n");
+  }
+  
+  return 0;
+}

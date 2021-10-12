@@ -21,3 +21,132 @@ main ()
   
   return 0;
 }
+
+Задание 2.
+#include <stdio.h>
+
+int
+main ()
+{
+  float a, A;
+
+  printf ("Введите значение угла в радианах ___ π\n");
+  scanf ("%g", &a);
+  if (0 < a && a < 2)
+  {
+    A = 180.0 * a;  
+    printf ("Угол в градусах = %g\n", A);
+  }
+  else 
+  {
+    printf ("Условие не соблюдается");
+  }
+  
+  return 0;
+}
+
+Задание 3.
+#include <stdio.h>
+
+int
+main ()
+{
+  int A, X, Y;
+  double a, b, c;
+  
+  printf ("Введите X\n");
+  scanf ("%d", &X);
+  printf ("Введите цену X кг конфет\n");
+  scanf ("%d", &A);
+  printf ("Введите Y\n");
+  scanf ("%d", &Y);
+  a = (double) A / X; //цена за 1 кг
+  b = a * Y; //цена за Y кг 
+  c = a + b;
+  printf ("1 кг и Y кг стоят %g рублей\n", c);
+  
+  return 0;
+}
+
+Задание 4.
+#include <stdio.h>
+
+int
+main ()
+{
+  int v1, v2, S, T;
+  
+  printf ("Введите скорость первого автомобиля, км/ч\n");
+  scanf ("%d", &v1);
+  printf ("Введите скорость второго автомобиля, км/ч\n");
+  scanf ("%d", &v2);
+  printf ("Введите начальное расстояние между ними, км\n");
+  scanf ("%d", &S);
+  printf ("Введите время, ч\n");
+  scanf ("%d", &T);
+  v1 *= T;
+  v2 *= T;
+  S = S + v1 + v2;
+  printf ("Расстояние между ними %d км\n", S);
+  
+  return 0;
+}
+
+Задание 5.
+#include <stdio.h>
+
+int
+main ()
+{
+  int A, B;
+  double x;
+  
+  printf ("A * x + B = 0\n");
+  printf ("Введите коэффициент A\n");
+  scanf ("%d", &A);
+  printf ("Введите коэффициент B\n");
+  scanf ("%d", &B);
+  B *= -1;
+  x = (double) B / A;  
+  printf ("x =  %g\n", x);
+  
+  return 0;
+}
+
+Задание 6.
+#include <stdio.h>
+
+int
+main ()
+{
+  int A1, A2, B1, B2, C1, C2, a, b, c, d;
+  float x, y, z;
+  
+  printf ("A1 * x + B1 * y = C1,\n");
+  printf ("A2 * x + B2 * y = C2,\n");
+  printf ("Введите коэффициент A1\n");
+  scanf ("%d", &A1);
+  printf ("Введите коэффициент B1\n");
+  scanf ("%d", &B1);
+  printf ("Введите коэффициент C1\n");
+  scanf ("%d", &C1);
+  printf ("Введите коэффициент A2\n");
+  scanf ("%d", &A2);
+  printf ("Введите коэффициент B2\n");
+  scanf ("%d", &B2);
+  printf ("Введите коэффициент C2\n");
+  scanf ("%d", &C2);
+  a = C1 * B2;
+  b = C2 * B1;
+  a = a - b;
+  c = A1 * B2;
+  d = A2 * B1;
+  c = c - d;
+  x = (float) a / c;
+  z = (float) C1 - (float) A1 * x;
+  y = z / B1;
+  printf ("x =  %g\n", x);
+  printf ("y =  %g\n", y);
+  
+  return 0;
+}

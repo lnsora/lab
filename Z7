@@ -52,7 +52,7 @@ int
 main ()
 {
   int A, X, Y;
-  double a, b, c;
+  double a, b;
   
   printf ("Введите X\n");
   scanf ("%d", &X);
@@ -62,8 +62,8 @@ main ()
   scanf ("%d", &Y);
   a = (double) A / X; //цена за 1 кг
   b = a * Y; //цена за Y кг 
-  c = a + b;
-  printf ("1 кг и Y кг стоят %g рублей\n", c);
+  printf ("Цена за 1 кг %g рублей\n", a);
+  printf ("Цена за Y кг %g рублей\n", b);
   
   return 0;
 }

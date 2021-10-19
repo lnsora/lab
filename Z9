@@ -1,0 +1,71 @@
+Задание 1.
+#include <stdio.h>
+
+int main ()
+{
+    int N;
+    
+    printf ("Введите количество секунд\n");
+    scanf ("%d", &N);
+    do {
+        N = N - 60;
+    } while (N > 60);
+    printf ("%d - количество секунд, прошедших с начала последней минуты.\n", N);
+    
+    return 0;
+}
+
+Задание 2.
+#include <stdio.h>
+
+int main ()
+{
+    int K, a;
+    
+    printf ("Введите K\n");
+    scanf ("%d", &K);
+    if (K >= 1 && K <= 365)
+    {
+        if (K >=7 && K <= 365)
+        {
+            a = K / 7;
+            K = K - a * 7;
+        }
+        if (K == 0)
+         {
+             printf ("Воскресенье.\n");
+         }
+        else if (K == 1)
+         {
+            printf ("Понедельник.\n");
+         }
+        else if (K == 2)
+         {
+            printf ("Вторник.\n");
+         }
+        else if (K == 3)
+        {
+            printf ("Среда.\n");
+        }
+        else if (K == 4)
+        {
+            printf ("Четверг.\n");
+        }
+        else if (K == 5)
+        {
+            printf ("Пятница.\n");
+        }
+        else if (K == 6)
+        {
+            printf ("Суббота.\n");
+        }
+    }
+    else
+    {
+        printf ("K лежит в диапазоне 1–365\n");
+    }
+    
+    return 0;
+}
+
+Задание 3.

@@ -152,3 +152,70 @@ int main ()
     
     return 0;
 }
+
+Задание 6.
+#include <stdio.h>
+
+int main ()
+{
+    int a, b, c, x, y, z;
+    
+    printf ("Введите a:\n");
+    scanf ("%d", &a);
+    printf ("Введите b:\n");
+    scanf ("%d", &b);
+    printf ("Введите c:\n");
+    scanf ("%d", &c);
+    x = a * a + b * b;
+    z = b * b + c * c;
+    y = a * a + c * c;
+    c *= c;
+    b *= b;
+    a *= a;
+    if (c == x)
+    {
+        printf ("Треугольник со сторонами a, b, c является прямоугольным.\n");
+    }
+    else if (b == y)
+    {
+        printf ("Треугольник со сторонами a, b, c является прямоугольным.\n");
+    }
+    else if (a == z)
+    {
+        printf ("Треугольник со сторонами a, b, c является прямоугольным.\n");
+    }
+    else 
+    {
+        printf ("Треугольник со сторонами a, b, c HE является прямоугольным.\n");
+    }
+    
+    return 0;
+}
+
+Задание 7.
+#include <stdio.h>
+
+int main ()
+{
+    int a, b, c, ac, ab, bc;
+    
+    printf ("Введите a:\n");
+    scanf ("%d", &a);
+    printf ("Введите b:\n");
+    scanf ("%d", &b);
+    printf ("Введите c:\n");
+    scanf ("%d", &c);
+    ac = a + c;
+    ab = a + b;
+    bc = b + c;
+    if (ac > b && ab > c && bc > a)
+    {
+        printf ("Существует треугольник со сторонами a, b, c.\n");
+    }
+    else 
+    {
+        printf ("He cуществует треугольник со сторонами a, b, c.\n");
+    }
+    
+    return 0;
+}

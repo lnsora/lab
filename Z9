@@ -185,3 +185,60 @@ int main ()
        
     return 0;
 }
+
+Задание 4.
+#include <stdio.h>
+
+int main ()
+{
+    int A, B, C, pr, kv, c1, c2, d, f;
+    
+    printf ("Введите A:\n");
+    scanf ("%d", &A);
+    printf ("Введите B:\n");
+    scanf ("%d", &B);
+    printf ("Введите C:\n");
+    scanf ("%d", &C);
+    pr = A * B;
+    kv = C * C;
+    c1 = A / C;
+    c2 = B / C;
+    if (pr > kv)
+    {
+        d = c2 * c1;
+        f = pr - kv * d;
+    }
+    else
+    {
+        printf ("Квадрат не умещается в прямоугольник\n");
+    }
+    
+    printf ("%d - количество квадратов CxC в прямоугольнике AxB.\n", d);
+    printf ("%d - площадь незанятой части прямоугольника. \n", f);
+    
+    return 0;
+}
+
+Задание 5.
+#include <stdio.h>
+
+int main ()
+{
+    int A, a, b;
+    
+    printf ("Введите год:\n");
+    scanf ("%d", &A);
+    a = A % 100;
+    if (a > 0)
+    {
+        b = A / 100;
+        b++;
+    }
+    else 
+    {
+        b = A / 100;
+    }
+    printf ("%d номер столетия. \n", b);
+    
+    return 0;
+}

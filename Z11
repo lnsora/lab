@@ -1,0 +1,67 @@
+Задание 1.
+#include <stdio.h>
+
+int main ()
+{
+    int A, B;
+    
+    printf ("Введите A:\n");
+    scanf ("%d", &A);
+    printf ("Введите B:\n");
+    scanf ("%d", &B);
+    if (A == B)
+    {
+        A = 0;
+        B = 0;
+        printf ("A = %d, B = %d.\n", A, B);
+    }
+    else 
+    {
+        if (A > B)
+        {
+            B = A;
+            printf ("A = %d, B = %d.\n", A, B);
+        }
+        else 
+        {
+            A = B;
+            printf ("A = %d, B = %d.\n", A, B);
+        }
+    }
+    
+    return 0;
+}
+
+Задание 2.
+#include <stdio.h>
+
+int main ()
+{
+    int A, B, C, sum;
+    
+    printf ("Введите A:\n");
+    scanf ("%d", &A);
+    printf ("Введите B:\n");
+    scanf ("%d", &B);
+    printf ("Введите C:\n");
+    scanf ("%d", &C);
+    if (C > A && B > A)
+    {
+        sum = C + B;
+        printf ("Сумма двух наибольших из них - %d\n", sum);
+    }
+    else if (C > B && A > B)
+    {
+        sum = C + A;
+        printf ("Сумма двух наибольших из них - %d\n", sum);
+    }
+    else if (A > C && B > C)
+    {
+        sum = A + B;
+        printf ("Сумма двух наибольших из них - %d\n", sum);
+    }
+    
+    return 0;
+}
+
+Задание 3.

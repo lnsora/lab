@@ -65,3 +65,59 @@ int main ()
 }
 
 Задание 3.
+#include <stdio.h>
+
+int main ()
+{
+    int A, B, C, AC, AB, sum;
+    
+    printf ("Введите значения A, B, C\n");
+    scanf ("%d%d%d", &A, &B, &C);
+    AC = C - A;
+    AC = abs (AC);
+    AB = B - A;
+    AB = abs (AB);
+    if (AB < AC)
+    {
+        printf ("Ближе к точке А находится точка B.\n");
+        printf ("Расстояние - %d\n", AB);
+    }
+    else 
+    {
+        printf ("Ближе к точке А находится точка C.\n");
+        printf ("Расстояние - %d\n", AC);
+    }
+    
+    return 0;
+}
+
+Задание 4.
+#include <stdio.h>
+
+int main ()
+{
+    int x, y;
+    
+    printf ("Введите координату:\n");
+    scanf ("%d%d", &x, &y);
+    if (x > 0 && y > 0)
+    {
+        printf ("Первая четверть.\n");
+    }
+    else if (x < 0 && y > 0)
+    {
+        printf ("Вторая четверть.\n");
+    }
+    else if (x < 0 && y < 0)
+    {
+        printf ("Третья четверть.\n");
+    }
+    else if (x > 0 && y < 0)
+    {
+        printf ("Четвертая четверть.\n");
+    }
+    
+    return 0;
+}
+
+Задание 5.

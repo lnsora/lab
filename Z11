@@ -66,26 +66,35 @@ int main ()
 
 Задание 3.
 #include <stdio.h>
+#include <math.h>
 
 int main ()
 {
-    int A, B, C, AC, AB, sum;
+    int x1, y1, x2, y2, x3, y3, ac, ab;
+    double AB, AC;
     
-    printf ("Введите значения A, B, C\n");
-    scanf ("%d%d%d", &A, &B, &C);
-    AC = C - A;
-    AC = abs (AC);
-    AB = B - A;
-    AB = abs (AB);
+    printf ("Введите значения A\n");
+    scanf ("%d", &x1);
+    scanf ("%d", &y1);
+    printf ("Введите значения B\n");
+    scanf ("%d", &x2);
+    scanf ("%d", &y2);
+    printf ("Введите значения C\n");
+    scanf ("%d", &x3);
+    scanf ("%d", &y3);
+    ab = (x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1);
+    AB = sqrt ((double) ab);
+    ac = (x3 - x1) * (x3 - x1) + (y3 - y1) * (y3 - y1);
+    AC = sqrt ((double) ac);
     if (AB < AC)
     {
         printf ("Ближе к точке А находится точка B.\n");
-        printf ("Расстояние - %d\n", AB);
+        printf ("Расстояние - %g\n", AB);
     }
     else 
     {
         printf ("Ближе к точке А находится точка C.\n");
-        printf ("Расстояние - %d\n", AC);
+        printf ("Расстояние - %g\n", AC);
     }
     
     return 0;

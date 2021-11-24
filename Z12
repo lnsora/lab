@@ -227,3 +227,123 @@ int main()
     
     return 0;
 }
+
+Задание 3.
+#include <stdio.h>
+
+int main()
+{
+    int x, z, y;
+    printf("Введите число (10-40):\n");
+    scanf("%d", &x);
+    z = x / 10;
+    y = x % 10;
+    if (z == 1)
+    {
+        switch (x)
+        {
+            case 11:
+            printf("одинадцать учебных заданий.\n");
+            break;
+            case 12:
+            printf("четырнадцать учебных заданий.\n");
+            break;
+            case 13:
+            printf("тринадцать учебных заданий.\n");
+            break;
+            case 14:
+            printf("четырнадцать учебных заданий.\n");
+            break;
+            case 15:
+            printf("пятнадцать учебных заданий.\n");
+            break;
+            case 16:
+            printf("шестнадцать учебных заданий.\n");
+            break;
+            case 17:
+            printf("семнадцать учебных заданий.\n");
+            break;
+            case 18:
+            printf("восемнадцать учебных заданий.\n");
+            break;
+            case 19:
+            printf("девятнадцать учебных заданий.\n");
+            break;
+            case 10:
+            printf("десять учебных заданий.\n");
+            break;
+        }
+    }
+    else
+    {
+        switch (z)
+        {
+            case 2:
+            printf ("двадцать ");
+            break;
+            case 3:
+            printf ("тридцать ");
+            break;
+            case 4:
+            printf ("сорок ");
+            break;
+        }
+        switch (y)
+        {
+            case 1:
+            printf ("одно ");
+            break;
+            case 2:
+            printf ("два ");
+            break;
+            case 3:
+            printf ("три ");
+            break;
+            case 4:
+            printf ("четыре ");
+            break;
+            case 5:
+            printf ("пять ");
+            break;
+            case 6:
+            printf ("шесть ");
+            break;
+            case 7:
+            printf ("семь ");
+            break;
+            case 8:
+            printf ("восемь ");
+            break;
+            case 9:
+            printf ("девять ");
+            break;
+        }
+        switch (y)
+        {
+            case 0:
+            printf ("учебных заданий.");
+            case 5:
+            printf ("учебных заданий.");
+            case 6:
+            printf ("учебных заданий.");
+            case 7:
+            printf ("учебных заданий.");
+            case 8:
+            printf ("учебных заданий.");
+            case 9:
+            printf ("учебных заданий."); 
+            break;
+            case 2:
+            printf ("учебных задания.");
+            case 3:
+            printf ("учебных задания.");
+            case 4:
+            printf ("учебных задания.");
+            break;
+            case 1:
+            printf ("учебное задание.");
+            break;
+        }
+    }
+    return 0;
+}

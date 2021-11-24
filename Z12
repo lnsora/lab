@@ -238,6 +238,7 @@ int main()
     scanf("%d", &x);
     z = x / 10;
     y = x % 10;
+    printf ("%d", y);
     if (z == 1)
     {
         switch (x)
@@ -322,14 +323,19 @@ int main()
         {
             case 0:
             printf ("учебных заданий.");
+            break;
             case 5:
             printf ("учебных заданий.");
+            break;
             case 6:
             printf ("учебных заданий.");
+            break;
             case 7:
             printf ("учебных заданий.");
+            break;
             case 8:
             printf ("учебных заданий.");
+            break;
             case 9:
             printf ("учебных заданий."); 
             break;

@@ -238,7 +238,6 @@ int main()
     scanf("%d", &x);
     z = x / 10;
     y = x % 10;
-    printf ("%d", y);
     if (z == 1)
     {
         switch (x)

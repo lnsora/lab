@@ -354,3 +354,145 @@ int main()
     }
     return 0;
 }
+
+Задание 4.
+#include <stdio.h>
+
+int main()
+{
+    int x, z, y, c, a;
+    printf("Введите число (100-999):\n");
+    scanf("%d", &x);
+    z = x / 100;
+    c = x - z * 100;
+    y = (x - z * 100) / 10;
+    a = (x - z * 100) % 10;
+    switch (z)
+        {
+            case 1:
+            printf ("сто ");
+            break;
+            case 2:
+            printf ("двести ");
+            break;
+            case 3:
+            printf ("триста ");
+            break;
+            case 4:
+            printf ("четыреста ");
+            break;
+            case 5:
+            printf ("пятьсот ");
+            break;
+            case 6:
+            printf ("шестьсот ");
+            break;
+            case 7:
+            printf ("семьсот ");
+            break;
+            case 8:
+            printf ("восемьсот ");
+            break;
+            case 9:
+            printf ("девятьсот ");
+            break;
+        }
+        if (y > 1)
+        {
+            switch (y)
+            {
+                case 2:
+                printf ("двадцать ");
+                break;
+                case 3:
+                printf ("тридцать ");
+                break;
+                case 4:
+                printf ("сорок ");
+                break;
+                case 5:
+                printf ("пятьдесят ");
+                break;
+                case 6:
+                printf ("шестьдесят ");
+                break;
+                case 7:
+                printf ("семьдесят ");
+                break;
+                case 8:
+                printf ("восемьдесят ");
+                break;
+                case 9:
+                printf ("девяносто ");
+                break;
+            }
+            switch (a)
+            {
+                case 1:
+                printf ("один ");
+                break;
+                case 2:
+                printf ("два ");
+                break;
+                case 3:
+                printf ("три ");
+                break;
+                case 4:
+                printf ("четыре ");
+                break;
+                case 5:
+                printf ("пять ");
+                break;
+                case 6:
+                printf ("шесть ");
+                break;
+                case 7:
+                printf ("семь ");
+                break;
+                case 8:
+                printf ("восемь ");
+                break;
+                case 9:
+                printf ("девять ");
+                break;
+            }
+        }
+    else if (y == 1)
+    {
+        switch (c)
+        {
+            case 11:
+            printf("одинадцать.\n");
+            break;
+            case 12:
+            printf("двенадцать.\n");
+            break;
+            case 13:
+            printf("тринадцать.\n");
+            break;
+            case 14:
+            printf("четырнадцать.\n");
+            break;
+            case 15:
+            printf("пятнадцать.\n");
+            break;
+            case 16:
+            printf("шестнадцать.\n");
+            break;
+            case 17:
+            printf("семнадцать.\n");
+            break;
+            case 18:
+            printf("восемнадцать.\n");
+            break;
+            case 19:
+            printf("девятнадцать.\n");
+            break;
+            case 10:
+            printf("десять.\n");
+            break;
+        }
+    }
+    
+    return 0;
+}

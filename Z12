@@ -246,7 +246,7 @@ int main()
             printf("одинадцать учебных заданий.\n");
             break;
             case 12:
-            printf("четырнадцать учебных заданий.\n");
+            printf("двенадцать учебных заданий.\n");
             break;
             case 13:
             printf("тринадцать учебных заданий.\n");
@@ -340,8 +340,10 @@ int main()
             break;
             case 2:
             printf ("учебных задания.");
+            break;
             case 3:
             printf ("учебных задания.");
+            break;
             case 4:
             printf ("учебных задания.");
             break;

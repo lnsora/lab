@@ -68,3 +68,53 @@ int main()
 }
 
 Задание 4.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int N, A, sum, x, y;
+    
+    printf ("число N:\n");
+    scanf ("%d", &N);
+    printf ("число A:\n");
+    scanf ("%d", &A);
+    sum = 0;
+    y = 0;
+    while (y <= N)
+    {
+        x = pow(A, y);
+        sum = sum + x;
+        y = y + 1;
+    }
+    printf("Сумма = %d\n", sum);
+    
+    return 0;
+}
+
+Задание 5.
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int N, A, zn, x1, x2, y;
+    
+    printf ("число N:\n");
+    scanf ("%d", &N);
+    printf ("число A:\n");
+    scanf ("%d", &A);
+    zn = 1;
+    y = 1;
+    while (y <= N)
+    {
+        x1 = pow(A, y);
+        x2 = pow(-1, y);
+        zn = zn + x1 * x2;
+        y = y + 1;
+    }
+    
+    printf("значение выражения  = %d\n", zn);
+    
+    return 0;
+}

@@ -1,0 +1,70 @@
+Задание 1.
+#include <stdio.h>
+
+int main()
+{
+    int x;
+    double y, z;
+    
+    printf ("Цена за кг:\n");
+    scanf ("%d", &x);
+    y = 0.1;
+    while (y <= 1.0)
+    {
+        z = y * x;
+        printf("Цена за %g = %g\n", y, z);
+        y = y + 0.1;
+    }
+    
+    return 0;
+}
+
+Задание 2.
+#include <stdio.h>
+
+int main()
+{
+    int N;
+    double x, y, p;
+    
+    printf ("число:\n");
+    scanf ("%d", &N);
+    y = 1.1;
+    p = 1.0;
+    x = p + N * 0.1;
+    printf ("Последний множитель = %g\n", x);
+    while (y <= x)
+    {
+        p = p * y;
+        y = y + 0.1;
+    }
+    p = p * x;
+    printf("Произведение = %g\n", p);
+    
+    return 0;
+}
+
+Задание 3.
+#include <stdio.h>
+
+int main()
+{
+    int N, k, a, b;
+    
+    printf ("число:\n");
+    scanf ("%d", &N);
+    k = 0;
+    b = 1;
+    a = 2 * N - 1;
+    while (b <= a)
+    {
+        k = k + b;
+        printf("Сумма = %d\n", k);
+        b = b + 2;
+    }
+    printf("Квадрат N = %d\n", k);
+    
+    return 0;
+}
+
+Задание 4.

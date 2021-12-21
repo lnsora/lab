@@ -1,0 +1,51 @@
+Задание 1.
+#include <stdio.h>
+#include <math.h>
+
+double PowerA3(double A)
+{
+    double x = 1.0;
+    x = pow(A, 3);
+}
+
+int main()
+{
+    double A, B;
+    for(int i = 0; i < 5; i++)
+    {
+        printf("Введите число:\n");
+        scanf("%lg", &A);
+        B = PowerA3(A);
+        printf("A в 3 степени = %lg\n\n", B);
+    }
+}
+
+Задание 2.
+#include <stdio.h>
+
+int Sign(double x)
+{
+    if (x > 0)
+    return 1;
+    else if (x == 0)
+    return 0;
+    else if (x < 0)
+    return -1;
+}
+
+int main()
+{
+    double A, B;
+    int sum;
+    printf("Введите число A:\n");
+    scanf("%lg", &A);
+    printf("Введите число B:\n");
+    scanf("%lg", &B);
+    A = Sign(A);
+    B = Sign(B);
+    sum = A + B;
+    printf("значение выражения Sign(A) + Sign(B) = %d\n", sum);
+
+}
+
+Задание 3.

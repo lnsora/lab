@@ -49,3 +49,25 @@ int main()
 }
 
 Задание 3.
+#include <stdio.h>
+
+double RingS(double R1, double R2)
+{
+    R1 = R1 * R1;
+    R2 = R2 * R2;
+    double sr = 3.14 * (R1 - R2);
+}
+
+void main()
+{
+    double R1, R2, klz;
+    for(int i = 0; i < 3; i++)
+    {
+        printf("Введите радиусы:\n");
+        scanf("%lg%lg", &R1, &R2);
+        klz = RingS(R1, R2);
+        printf("Площадь кольца = %lg\n\n", klz);
+    }
+}
+
+Задание 4.

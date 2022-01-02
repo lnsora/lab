@@ -97,3 +97,42 @@ void main()
         printf("Четверть - %d\n\n", ch);
     }
 }
+
+Задание 5.
+#include <stdio.h>
+
+double Fact2(N)
+{
+    int n = N % 2;
+    int f = 1;
+    if (n == 0)
+    {
+        int k = 2;
+        while (k <= N)
+        {
+            f = f * k;
+            k = k + 2;  
+        }
+        return f;
+    }
+    else if (n != 0)
+    {
+        int k = 1;
+        while (k <= N)
+        {
+            f = f * k;
+            k = k + 2;  
+        }
+        return f;
+    }
+    
+}
+
+void main()
+{
+    int N;
+    printf("Введите N:\n");
+    scanf("%d", &N);
+    N = Fact2(N);
+    printf ("N!! = %d", N);
+}

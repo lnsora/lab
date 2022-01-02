@@ -1,0 +1,47 @@
+Задание 1.
+#include <stdio.h>
+
+int main()
+{
+    printf("Введите N:\n");
+    int N;
+    scanf ("%d", &N);
+    int i = 1;
+    int j = 1;
+    for (i; i <= N; i++)
+    {
+        printf ("a[%d] = %d\n", i, j);
+        j = j + 2;
+    }
+    return 0;
+}
+
+Задание 2.
+#include <stdio.h>
+
+int main()
+{
+    printf("Введите N(> 1):\n");
+    int N, A, D;
+    scanf ("%d", &N);
+    printf("Введите первый член геометрической прогрессии:\n");
+    scanf ("%d", &A);
+    printf("Введите знаменатель геометрической прогрессии:\n");
+    scanf ("%d", &D);
+    int i = 1;
+    int j = A;
+    for (i; i <= N; i++)
+    {
+        printf ("a[%d] = %d\n", i, j);
+        j = j * D;
+    }
+    return 0;
+}
+
+Задание 3.
+
+
+Задание 4.
+
+
+Задание 5.

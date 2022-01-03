@@ -102,3 +102,46 @@ int main()
 }
 
 Задание 5.
+#include <stdio.h>
+
+int main()
+{
+    printf("Введите N:\n");
+    int N;
+    scanf ("%d", &N);
+    printf("Введите последовательность чисел:\n");
+    int A[N];
+    int b = 1;
+    while (b < N + 1)
+    {
+        printf("A[%d] = ", b);
+        scanf("%d", &A[b]);
+        b++;
+    }
+    b = 1;
+    while (b < N)
+    {
+        printf("%i\n",A[b]);
+        b = b + 2;
+    }
+    int x = N % 2;
+    if (x != 0)
+    {
+        N = N - 1;
+        while (N > 1)
+        {
+            printf("%i\n",A[N]);
+            N = N - 2;
+        }
+    }
+    else if (x == 0)
+    {
+        while (N > 1)
+        {
+            printf("%i\n",A[N]);
+            N = N - 2;
+        }
+    }
+
+    return 0;
+}

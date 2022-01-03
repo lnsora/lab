@@ -43,7 +43,30 @@ int main()
 }
 
 Задание 3.
+#include <stdio.h>
 
+int main()
+{
+    printf("Введите N(> 2):\n");
+    int N, A, B;
+    scanf ("%d", &N);
+    printf("Введите первый элемент:\n");
+    scanf ("%d", &A);
+    printf("Введите второй элемент:\n");
+    scanf ("%d", &B);
+    int i = 3;
+    int j = A + B;
+    int a[N];
+    printf ("a[1] =  %d\n", A);
+    printf ("a[2] =  %d\n", B);
+    for (i; i <= N; i++)
+    {
+        a[i] = j;
+        printf ("a[%d] = %d\n", i, j);
+        j = j + a[i];
+    }
+    return 0;
+}
 
 Задание 4.
 

@@ -72,7 +72,36 @@ int main()
 }
 
 Задание 3.
+#include <stdio.h>
 
+int main()
+{
+    printf("Введите N:\n");
+    int N;
+    scanf ("%d", &N);
+    printf("Введите последовательность чисел:\n");
+    int A[N];
+    int b = 1;
+    while (b < N + 1)
+    {
+        printf("A[%d] = ", b);
+        scanf("%d", &A[b]);
+        b++;
+    }
+    int x = 4;
+    int min = A[2];
+    while (x < N)
+    {
+        if (A[x] < min)
+        {
+            min = A[x];
+        }
+        x = x + 2;
+    }
+    printf ("минимальный элемент из его элементов с четными номерами - %d", min);
+    
+    return 0;
+}
 
 Задание 4.
 

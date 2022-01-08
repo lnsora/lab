@@ -1,0 +1,45 @@
+Задание 1.
+#include <stdio.h>
+
+int main()
+{
+    printf("Введите N:\n");
+    int N;
+    scanf ("%d", &N);
+    printf("Введите последовательность чисел:\n");
+    int A[N];
+    int b = 1;
+    while (b < N + 1)
+    {
+        printf("A[%d] = ", b);
+        scanf("%d", &A[b]);
+        b++;
+    }
+    int K, L;
+    printf("Введите номера элементов массива K и L (1 ≤ K ≤ L ≤ N):\n");
+    scanf ("%d%d", &K, &L);
+    int x = 0;
+    int y = 0;
+    while (K <= L)
+    {
+        y = y + A[K];
+        K = K + 1;
+        x = x + 1;
+    }
+    double z;
+    z = y / (double)x;
+    printf("среднее арифметическое элементов массива: %lg\n", z);
+
+    return 0;
+}
+
+Задание 2.
+
+
+Задание 3.
+
+
+Задание 4.
+
+
+Задание 5.

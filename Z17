@@ -104,6 +104,37 @@ int main()
 }
 
 Задание 4.
+#include <stdio.h>
 
+int main()
+{
+    printf("Введите N:\n");
+    int N;
+    scanf ("%d", &N);
+    printf("Введите последовательность чисел:\n");
+    int A[N];
+    int b = 1;
+    while (b < N + 1)
+    {
+        printf("A[%d] = ", b);
+        scanf("%d", &A[b]);
+        b++;
+    }
+    int x = 2;
+    int lm;
+    int y;
+    while (x < N)
+    {
+        if (A[x] > A[x + 1] && A[x] > A[x - 1])
+        {
+            lm = A[x];
+            y = x;
+        }
+        x = x + 1;
+    }
+    printf ("номер последнего локального максимума - %d", y);
+    
+    return 0;
+}
 
 Задание 5.

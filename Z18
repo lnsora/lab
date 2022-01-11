@@ -47,7 +47,45 @@ int main()
 }
 
 Задание 2.
+#include <stdio.h>
 
+void main()
+{
+    printf("Введите N:\n");
+    int N;
+    scanf ("%d", &N);
+    printf("Введите последовательность чисел A:\n");
+    int A[N];
+    int a = 1;
+    while (a < N + 1)
+    {
+        printf("A[%d] = ", a);
+        scanf("%d", &A[a]);
+        a++;
+    }
+    printf("\nпоследовательность чисел B:\n");
+    int y = A[1];
+    int K = 2;
+    int x = 2;
+    double B[N];
+    printf("B[1] = %d\n", A[1]);
+    while (x < K + 1 && K < N + 1)
+    {
+        double z = K;
+        int o = x;
+        while (x < K + 1)
+        {
+            y = y + A[x];
+            x = x + 1;
+            printf("y = %d\n", y);
+        }
+        B[K] = (double)y / z;
+        printf("B[%d] = %lg\n", K, B[K]);
+        K = K + 1;
+        z = z + 1.0;
+        x = o + 1;
+    }
+}
 
 Задание 3.
 

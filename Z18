@@ -1,0 +1,58 @@
+Задание 1.
+#include <stdio.h>
+
+int main()
+{
+    printf("Введите N:\n");
+    int N;
+    scanf ("%d", &N);
+    printf("Введите последовательность чисел A:\n");
+    int A[N];
+    int a = 1;
+    while (a < N + 1)
+    {
+        printf("A[%d] = ", a);
+        scanf("%d", &A[a]);
+        a++;
+    }
+    printf("\nВведите последовательность чисел B:\n");
+    int B[N];
+    int b = 1;
+    while (b < N + 1)
+    {
+        printf("B[%d] = ", b);
+        scanf("%d", &B[b]);
+        b++;
+    }
+    
+    int x = 1;
+    for (x; x < N + 1; x++)
+    {
+        A[x] = A[x] + B[x];
+        B[x] = A[x] - B[x];
+        A[x] = A[x] - B[x];
+    }
+    printf("A: \n");
+    for (x = 1; x < N + 1; x++)
+    {
+        printf("  %d: %d\n", x, A[x]);
+    }
+    printf("B: \n");
+    for (x = 1; x < N + 1; x++)
+    {
+        printf("  %d: %d\n", x, B[x]);
+    }
+    
+    return 0;
+}
+
+Задание 2.
+
+
+Задание 3.
+
+
+Задание 4.
+
+
+Задание 5.

@@ -138,3 +138,34 @@ int main()
 }
 
 Задание 5.
+#include <stdio.h>
+
+int main()
+{
+    printf("Введите N:\n");
+    int N;
+    scanf ("%d", &N);
+    printf("Введите последовательность чисел:\n");
+    int A[N];
+    int b = 1;
+    while (b < N + 1)
+    {
+        printf("A[%d] = ", b);
+        scanf("%d", &A[b]);
+        b++;
+    }
+    int x = 1;
+    int y = x + 1;
+    for (x; x < N; x++)
+    {
+        for (y; y < N + 1; y++)
+        {
+            if (A[x] == A[y])
+            {
+                printf ("номера одинаковых элементов %d и %d", x, y);
+            }
+        }
+    }
+    
+    return 0;
+}
